@@ -15,11 +15,11 @@
 # entity.
 #
 # You can also pass in the variable "l:lines" to choose the range for
-# formatting. This variable can either contain "<start line>:<end line>" or
-# "all" to format the full file. So, to format the full file, write a function
+# formatting. This variable can either contain "<start line>:<end line>". So,
+# to format the full file, write a function
 # like:
 # :function FormatFile()
-# :  let l:lines="all"
+# :  let l:lines = printf("1:%d", line('$'))
 # :  pyf <path-to-this-file>/clang-format.py
 # :endfunction
 #
